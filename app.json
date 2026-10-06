@@ -1,24 +1,32 @@
 {
   "expo": {
-    "name": "AromaStock",
-    "slug": "AromaStock",
+    "name": "Aroma Stock",
+    "slug": "aroma-stock",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/aroma-stock-icon.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#452834",
+        "foregroundImage": "./assets/aroma-stock-adaptive-foreground.png",
+        "monochromeImage": "./assets/aroma-stock-monochrome.png"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/aroma-stock-favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Aroma Stock necesita acceso a tus fotos para elegir una foto de perfil.",
+          "microphonePermission": false
+        }
+      ]
+    ]
   }
 }
